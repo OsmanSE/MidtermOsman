@@ -41,13 +41,37 @@ main method is the entry point to the java application.
 
 Why main is static?
 A.
-main method is static because it can be accessed without instanciation
+main method is static because it can be accessed without the class instanciation.
+
 Which class is the superclass of all classes?
+A.
+java.lang.Object
+
 What is difference between path and classpath variables?
+A.
+path is system environment variable point to where jdk is installed, while
+classpath is for the location where java classes are saved.
+
+
 What is the difference between an Interface and Abstract class?
+A.
+Interface is a contract that hold methods declaration without implementation. They are used when
+ we know the requirements but not the implementation.
+ Abstract class in the other hand is used when we know partial implementation but not all.
+
 Can you make an Object from an Interface and Abstract class ? if not how do you use it ?
+
+A.
+we cannot make object out of Interface or Abstract class. We need concrete class that can
+extends the Abstract class and implements the Interface.
+
+
 what is Access Specifier?
+Access specifier is java keywords that specify the level of access and visibility of variable,
+method, and class. they are (public, default, private, protected, strictfp).
+
 What is OOP ? Define each feature of java OOP.
+
 What is Java Package and which package is imported by default?
 What is API? Name list of API that you have used so far.
 Does java support multiple inheritance, explain why or why not?
