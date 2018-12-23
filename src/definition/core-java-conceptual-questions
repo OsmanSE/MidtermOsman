@@ -2,13 +2,21 @@ Please answer the below core-java Questions:
 
 What is programing language?
 A.
+Programming language is a set of instructions, syntaxes and rules used to create software applications.
+They are mostly high level languages that can be understood by human to develop the logic and then translated
+by compilers and interpreters to machine language. ex: Java.
+
 What jdk contains or composed of and define each components?
 A.
+JDK is Java Development Kits. It composed of jre, jvm and editors. jre is java runtime environment.
+jvm is java virtual machine. and text editor to write the programs.
+
+
 What is IDE?
 A.
 What are the IDEs available in the market to support java?
 Explain the entire java life cycle.
-what is class?
+what is cla ss?
 What is object?
 What is the entry point of an application?
 Why main is static?
