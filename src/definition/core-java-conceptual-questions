@@ -71,16 +71,62 @@ Access specifier is java keywords that specify the level of access and visibilit
 method, and class. they are (public, default, private, protected, strictfp).
 
 What is OOP ? Define each feature of java OOP.
+A.
+
+OOP is Object Oriented Programming. OOP has the following features:
+Inheritance : It is a mechanism in which one class inherit feature from another class.
+Polymorphism : Polymorphism means many forms. It is a concept by which we can perform
+a single action in different ways. Two types of polymorphism: Overloading(early/static binding )
+and Overriding(dynamic/late binding).
+Encapsulation :It is a way of wrapping code and data to gother in a single unit. we may use p0rivate
+variables and use getters and setters to access them.
 
 What is Java Package and which package is imported by default?
+A.
+Java package is a folder(storage) area where related classes and interfaces are stored. Packages
+used to prevent naming  conflict, reusability and organizatio.
+java.lang package  is imported by default.
+
 What is API? Name list of API that you have used so far.
-Does java support multiple inheritance, explain why or why not?
+A.
+API stands for Application Programming Interface. It consists of all classes that are part of
+the Java development kit . It includes all Java packages, classes, and interfaces, along with
+their methods, fields, and constructors. They  provide a tremendous amount of functionality
+to  programmers.
+
+Does java support multiple inheritance, explain why  or why not?
+A.
+Java does'nt support multiple inheritance. If there are methods in parent and child classes
+that have same signature that will create a problem of which method to call.
+
 What is method overloading and when it happens?
+A.
+Method overloading is the mechanism of having methods with same name but different set of
+parameters either parameters types, number, oir order must be different. It happen at compile
+time(early binding).
+
 Explain exceptions in java and how to handle it.
+A
+Exception is an interruption to the normal flow of the program execution. We include the code
+that may cause exception within a try block, and and handle it in the catch block. we use finally
+to close opened resources.
+
 What is static keyword in java? How it has been used in variables and methods ?
+A.
+static indicates that the particular member belongs to a type(class) rather than to an instance
+of that type. This means that only one instance of that static member is created which is shared
+across all instances of the class in the case of variables.  Static methods can be acdess directly
+ using th class name.
+
 What is final and how it has been used variables and methods?
+A.
+Final define a constant. For final variable we cannot change its value once we assign it.
+Final methods cannot be overriden.
+
 What is final, finally and finalize?
+
 What is a constructor ?
+
 Can we have multiple constructors in a class?
 If we don't have a constructor declared, what is called during the object creation?
 What is "this" keyword in java ?
