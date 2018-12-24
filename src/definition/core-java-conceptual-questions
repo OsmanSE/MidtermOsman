@@ -235,11 +235,26 @@ while loop check the condition first. do-while run the loop body atleast once, t
  condition
 
 What is Enum?
+A.
+Java enum  is a special data type that enables us to assign a variable to  a set of predefined
+constants. The variable must be equal to one of the values that have been predefined for it.
+examples week  whick has values of (MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY)
+
 
 What is Iterator?
+A.
+Iterator is java interface that allow us to itterate through java collection elemnts one by one.
+moving forward with ability to remove elements.
 
 Which one will take more memory, an int or Integer?
+A.
+Integer takes more memory.
+
 Why is String Immutable in Java?
+A.
+By using string POOL many string may refere to same object in the pool. that is why they made
+String immutable.
+
 What is constructor chaining in Java?
 The difference between Serial and Parallel Garbage Collector?
 What is JIT stands for?
