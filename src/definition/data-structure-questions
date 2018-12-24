@@ -101,15 +101,47 @@ HashMap in Java works on hashing principle. It is a data structure which allows 
 
 What is ArrayIndexOutOfBoundsException in java? When it occurs?
 A.
-
+It is  a run time Exception that occurs when the programn try to access an index that out of the
+array boundary.
 
 What are the different ways of copying an array into another array?
+A.
+Manually using loops.
+Arrays.copyOf()
+System.arraycopy()
+Object.clone()
+
 What is difference between an array and a linked list?
+A.
+Arrays are index based data structure where each element associated with an index.
+On the other hand, Linked list relies on references where each node consists of the
+data and the references to the previous and next element.
+
+
 What is DFS and BFS?
+A.
+Breadth First Search(BFS):
+Depth First Search(DFS):
+
 What is Recursion?
+A.
+Recursion is method calls itself.
+
 What are linear and non linear data Structures?
+A.
+ linear data structure arranges the data into a sequence and follow some sort of order.
+ Whereas, the non-linear data structure does not organize the data in a sequential manner.
+
 What is Big-(O)-notation?
+A. It is used to describe the performance or complexity of algorithm. It gives execution time
+
 Outlined different kind of sorting algorithm with time complexity?
+A.
+
+The choice of the best sorting algorithm depends on the context.For large inputs,
+ Mergesort, Heapsort and Quicksortare the best algorithms with worst case running time of Mergesort and
+ Heapsort, and the average case running time of Quicksort being O(nlogn).(The worst case of
+ Quicksort which has a running time of O(n^2) ...
 
 Draw a table with time complexity in which it will summarize all the data structure feature's advantages and disadvantages.
   a)In terms of Accessing element.
