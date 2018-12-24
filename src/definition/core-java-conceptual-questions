@@ -124,29 +124,120 @@ Final define a constant. For final variable we cannot change its value once we a
 Final methods cannot be overriden.
 
 What is final, finally and finalize?
+A.
+Final class can't be inherited, final method can't be overridden and final variable value can't be
+changed. Finally is used to place important code, it will be executed whether exception is handled or not.
+ Finalize is used to perform clean up processing just before object is garbage collected
 
 What is a constructor ?
+A.
+A constructor in Java is a special method that is used to initialize objects. The constructor
+is called when an object of a class is created. It used to initialize  instance variables.
 
 Can we have multiple constructors in a class?
+A.
+Yes. a class can have multiple constructor.
+
 If we don't have a constructor declared, what is called during the object creation?
+A.
+The default constructor will be called.
+
 What is "this" keyword in java ?
+A.
+"this" key is a reference variable that used to refere to the current class object.
+
+
 What is "super" keyword in java? How many possible way can you use?
+A.
+"super" key word  in Java is a reference variable which is used to refer immediate parent
+class object. Whenever you create the instance of subclass, an instance of parent class is
+created implicitly which is referred by super reference variable.
+ super can be used to:
+  1- refer immediate parent class instance variable.
+  2- invoke immediate parent class method.
+  3- super() can be used to invoke immediate parent class constructor.
+
+
 What is JVM stand for ?
+A.
+jvm stands for Java Virtual Machine.
+
 Is JVM platform independent?
+A.
+No. jvm is platform dependent.
+
 What version of java are you using?
+A.
+I am using Java version 8.0.
+
 What is JAR stand for ?
+A.
+JAR stands for Java Archive.
+
 What is the difference between JDK and JVM?
+A.
+JVM stands for JAVA Virtual Machine.It converts the byte code into an executable code.
+JDK Java Development Kit is the core component of Java Environment and provides all
+the tools, executables and binaries required to compile, debug and execute a Java Program.
+
 What is the difference between JVM and JRE?
+A.
+JVM is java virtual machine which translate java byte codes into machine code.
+JRE java RunTime Environment. jre actually run the application.
+
 What is compile time and run time?
+A.
+Compile time is when the byte code being generated(.class files).
+Run time when executable code being executed(run .exe files).
+
 What is heap?
+A.
+Heap is a runtime memory area where class instances, arrays, and others are stored.
+
 How java manage it's memory?
+A.
+ava divide memory into heap memory where class instances and arrays are stored. And stack
+where variables are stored.
+
 What is the difference between String, StringBuffer and StringBuilder?
+A.
+String   : is immutable object, that is when allocated a value  it cannot be changed. Any changes
+ will be stored cannot be changed.
+
+StringBuffer is mutable means one can change the value of the object . The object created
+through StringBuffer is stored in the heap. StringBuffer has the same methods as the
+StringBuilder , but each method in StringBuffer is synchronized that is StringBuffer is thread
+safe .
+
+StringBuilder :  is same as the StringBuffer , that is it stores the object in heap and it can also
+be modified . The main difference between the StringBuffer and StringBuilder is
+that StringBuilder is also not thread safe.
+StringBuilder is fast as it is not thread safe .
+
 What is Singleton class?
+A.
+Singleton is a class that is designed to generate only one instance/object by using private
+constructor.
+
 What is Serialization and Deserialization?
+A.
+Serialization is a mechanism of converting the state of an object into a byte stream.
+Deserialization is the reverse process where the byte stream is used to recreate the actual
+Java object in memory.
+
 when to use transient variable in java?
+A.
+Transient variable is a variable that cannot be serialized during serialization.
+
 Difference between while and do..while loop?
+A.
+while loop check the condition first. do-while run the loop body atleast once, then check the
+ condition
+
 What is Enum?
+
 What is Iterator?
+
 Which one will take more memory, an int or Integer?
 Why is String Immutable in Java?
 What is constructor chaining in Java?
