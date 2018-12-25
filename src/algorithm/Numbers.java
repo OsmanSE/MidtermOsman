@@ -45,7 +45,7 @@ public class Numbers {
 
 
 
-		//Come to conclusion about which Sorting Algo is better in given data set.
+		//Come to conclusion about which Sorting Algorithm is better in given data set.
 
 	}
 

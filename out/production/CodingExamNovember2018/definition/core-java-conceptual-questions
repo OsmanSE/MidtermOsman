@@ -71,53 +71,275 @@ Access specifier is java keywords that specify the level of access and visibilit
 method, and class. they are (public, default, private, protected, strictfp).
 
 What is OOP ? Define each feature of java OOP.
+A.
+
+OOP is Object Oriented Programming. OOP has the following features:
+Inheritance : It is a mechanism in which one class inherit feature from another class.
+Polymorphism : Polymorphism means many forms. It is a concept by which we can perform
+a single action in different ways. Two types of polymorphism: Overloading(early/static binding )
+and Overriding(dynamic/late binding).
+Encapsulation :It is a way of wrapping code and data to gother in a single unit. we may use p0rivate
+variables and use getters and setters to access them.
 
 What is Java Package and which package is imported by default?
+A.
+Java package is a folder(storage) area where related classes and interfaces are stored. Packages
+used to prevent naming  conflict, reusability and organizatio.
+java.lang package  is imported by default.
+
 What is API? Name list of API that you have used so far.
-Does java support multiple inheritance, explain why or why not?
+A.
+API stands for Application Programming Interface. It consists of all classes that are part of
+the Java development kit . It includes all Java packages, classes, and interfaces, along with
+their methods, fields, and constructors. They  provide a tremendous amount of functionality
+to  programmers.
+
+Does java support multiple inheritance, explain why  or why not?
+A.
+Java does'nt support multiple inheritance. If there are methods in parent and child classes
+that have same signature that will create a problem of which method to call.
+
 What is method overloading and when it happens?
+A.
+Method overloading is the mechanism of having methods with same name but different set of
+parameters either parameters types, number, oir order must be different. It happen at compile
+time(early binding).
+
 Explain exceptions in java and how to handle it.
+A
+Exception is an interruption to the normal flow of the program execution. We include the code
+that may cause exception within a try block, and and handle it in the catch block. we use finally
+to close opened resources.
+
 What is static keyword in java? How it has been used in variables and methods ?
+A.
+static indicates that the particular member belongs to a type(class) rather than to an instance
+of that type. This means that only one instance of that static member is created which is shared
+across all instances of the class in the case of variables.  Static methods can be acdess directly
+ using th class name.
+
 What is final and how it has been used variables and methods?
+A.
+Final define a constant. For final variable we cannot change its value once we assign it.
+Final methods cannot be overriden.
+
 What is final, finally and finalize?
+A.
+Final class can't be inherited, final method can't be overridden and final variable value can't be
+changed. Finally is used to place important code, it will be executed whether exception is handled or not.
+ Finalize is used to perform clean up processing just before object is garbage collected
+
 What is a constructor ?
+A.
+A constructor in Java is a special method that is used to initialize objects. The constructor
+is called when an object of a class is created. It used to initialize  instance variables.
+
 Can we have multiple constructors in a class?
+A.
+Yes. a class can have multiple constructor.
+
 If we don't have a constructor declared, what is called during the object creation?
+A.
+The default constructor will be called.
+
 What is "this" keyword in java ?
+A.
+"this" key is a reference variable that used to refere to the current class object.
+
+
 What is "super" keyword in java? How many possible way can you use?
+A.
+"super" key word  in Java is a reference variable which is used to refer immediate parent
+class object. Whenever you create the instance of subclass, an instance of parent class is
+created implicitly which is referred by super reference variable.
+ super can be used to:
+  1- refer immediate parent class instance variable.
+  2- invoke immediate parent class method.
+  3- super() can be used to invoke immediate parent class constructor.
+
+
 What is JVM stand for ?
+A.
+jvm stands for Java Virtual Machine.
+
 Is JVM platform independent?
+A.
+No. jvm is platform dependent.
+
 What version of java are you using?
+A.
+I am using Java version 8.0.
+
 What is JAR stand for ?
+A.
+JAR stands for Java Archive.
+
 What is the difference between JDK and JVM?
+A.
+JVM stands for JAVA Virtual Machine.It converts the byte code into an executable code.
+JDK Java Development Kit is the core component of Java Environment and provides all
+the tools, executables and binaries required to compile, debug and execute a Java Program.
+
 What is the difference between JVM and JRE?
+A.
+JVM is java virtual machine which translate java byte codes into machine code.
+JRE java RunTime Environment. jre actually run the application.
+
 What is compile time and run time?
+A.
+Compile time is when the byte code being generated(.class files).
+Run time when executable code being executed(run .exe files).
+
 What is heap?
+A.
+Heap is a runtime memory area where class instances, arrays, and others are stored.
+
 How java manage it's memory?
+A.
+ava divide memory into heap memory where class instances and arrays are stored. And stack
+where variables are stored.
+
 What is the difference between String, StringBuffer and StringBuilder?
+A.
+String   : is immutable object, that is when allocated a value  it cannot be changed. Any changes
+ will be stored cannot be changed.
+
+StringBuffer is mutable means one can change the value of the object . The object created
+through StringBuffer is stored in the heap. StringBuffer has the same methods as the
+StringBuilder , but each method in StringBuffer is synchronized that is StringBuffer is thread
+safe .
+
+StringBuilder :  is same as the StringBuffer , that is it stores the object in heap and it can also
+be modified . The main difference between the StringBuffer and StringBuilder is
+that StringBuilder is also not thread safe.
+StringBuilder is fast as it is not thread safe .
+
 What is Singleton class?
+A.
+Singleton is a class that is designed to generate only one instance/object by using private
+constructor.
+
 What is Serialization and Deserialization?
+A.
+Serialization is a mechanism of converting the state of an object into a byte stream.
+Deserialization is the reverse process where the byte stream is used to recreate the actual
+Java object in memory.
+
 when to use transient variable in java?
+A.
+Transient variable is a variable that cannot be serialized during serialization.
+
 Difference between while and do..while loop?
+A.
+while loop check the condition first. do-while run the loop body atleast once, then check the
+ condition
+
 What is Enum?
+A.
+Java enum  is a special data type that enables us to assign a variable to  a set of predefined
+constants. The variable must be equal to one of the values that have been predefined for it.
+examples week  whick has values of (MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY)
+
+
 What is Iterator?
+A.
+Iterator is java interface that allow us to itterate through java collection elemnts one by one.
+moving forward with ability to remove elements.
+
 Which one will take more memory, an int or Integer?
+A.
+Integer takes more memory.
+
 Why is String Immutable in Java?
+A.
+By using string POOL many string may refere to same object in the pool. that is why they made
+String immutable.
+
 What is constructor chaining in Java?
+A.
+ Constructor chaining is the process of calling one constructor from another constructor
+ with respect to current object. Constructor chaining can be done in two ways: Within same
+ class: It can be done using this() keyword for constructors in same class. And by using
+ super() key to call constructor from base class.
+
 The difference between Serial and Parallel Garbage Collector?
+A.
+a serial collector is a default copying collector which uses only one GC thread for the GC
+operation, while a parallel collector uses multiple GC threads for the GC operation.
+
 What is JIT stands for?
+A.
+Just In-Time compiler.
+
 Explain Java Heap space and Garbage collection?
+A.
+Java objects reside in an area called the heap. ... When the heap becomes full, garbage is
+collected. During the garbage collection objects that are no longer used are cleared, thus
+making space for new objects
+
 Can you guarantee the garbage collection process?
+A.
+No. jvm may reject the request from garbage collection process.
+
 What is the difference between stack and heap in Java?
+A.
+Java store all objects and other programs components in Heap memory area. And it stores
+references to these objects as well as variables values in the stack.
+
+
 What is reflection in java and why is it useful?
+Reflection in Java is the ability to examine and/or modify the properties or behavior of an
+object at run-time. Reflection makes it possible to inspect classes, fields and methods at
+ runtime, without knowing the names of the classes, methods etc. at compile time.
+
+
 what is multithreading in java?
+A.
+Multithreading is the ability of java program to provide simultaneous execution of two or
+more parts of a program to  utilize the CPU time. A multithreaded program contains two or
+more parts that can run concurrently.
+
+
 What is the use of synchronization in Java?
+A.
+It is the process of letting only one thread to access the shared resources at the given time.
+Synchronization in Java guarantees that no two threads can execute a synchronized method which
+requires the same lock simultaneously or concurrently.
+
+
 What is Framework?
+A.
+Java framework  is a set of classes and interfaces that implement commonly
+ reusable collection data structures. It is a library that provides both interfaces that
+ define various collections and classes that implement them.
+
 What are the testing Framework available in java?
+A.
+Junit, testNG, Mockito, Hamcrest, etc.
+
+
 Difference between jUnit and testNG?
+A.
+Testng and Junit are Testing framework used for Unit Testing. TestNG is similar to JUnit.
+ but few more functionalities are added to testMNG  that makes TestNG more powerful than JUnit.
+
 What are the dependencies for this project?
+A.
+Dependencies are the relationships among tasks which determine the order in which activities
+need to be performed.
+
 what is dependency injection in java?
+A.
+It is  a java framework class(dependency container), than analyze the dependencies of this
+class. With this analysis it is able to create an instance of the class and inject the objects
+ into the defined dependencies, via Java reflection. ... If dependency injection is used,
+ a Java class can be tested in isolation.
+
+
 What is static binding and dynamic binding?
+A.
+Static binding(early binding)  which includes method overloading happensd at compile time,
+while dynamic binding(late binding) which include method overriding happends at runtime.
 
 
 
