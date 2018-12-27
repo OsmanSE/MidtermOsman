@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class EmployeeInfo {
 	
- /*This class can be implemented from Employee interface then add additional methods in EmployeeInfo class.
+/* /*This class can be implemented from Employee interface then add additional methods in EmployeeInfo class.
  * Also, Employee interface can be implemented into an abstract class.So create an Abstract class
  * then inherit that abstract class into EmployeeInfo class.Once you done with designing EmployeeInfo class,
  * go to FortuneEmployee class to apply all the fields and attributes.
@@ -19,8 +19,16 @@ public class EmployeeInfo {
 
 	/*
 	 * declare few static and final fields and some non-static fields
+	 *
 	 */
 	static String companyName;
+	private int employeeId;
+	private String employeeName;
+	private String departmentName;
+	private double salary;
+	private int performance;
+
+/*	static String companyName;
 	
 	/*
 	 * You must implement the logic for below 2 methods and 
@@ -32,34 +40,123 @@ public class EmployeeInfo {
 	 * you must have multiple constructor.
 	 * Must implement below constructor.
 	 */
+	public EmployeeInfo(){};
 	public EmployeeInfo(int employeeId){
 		
+		this.employeeId=employeeId;
 	}
-    public EmployeeInfo(String name, int employeeId){
-		
+   public EmployeeInfo(String name, int employeeId){
+	this.employeeName=	 name;
+	this.employeeId=employeeId;
 	}
-	
+	 //000000000
+
+	public void setEmployeeId(int employeeId) {
+		this.employeeId = employeeId;
+	}
+
+	public int getEmployeeId() {
+		return employeeId;
+	}
+
+	public void setEmployeeName(String employeeName) {
+		this.employeeName = employeeName;
+	}
+
+	public String getEmployeeName() {
+		return employeeName;
+	}
+
+	public double getSalary() {
+		return salary;
+	}
+
+	public void setSalary(double salary) {
+		this.salary = salary;
+	}
+
+	public int getPerformance() {
+		return performance;
+	}
+
+	public void setPerformance(int performance) {
+		this.performance = performance;
+	}
+
+	public String getDepartmentName() {
+		return departmentName;
+	}
+
+	public void setDepartmentName(String departmentName) {
+		this.departmentName = departmentName;
+	}
+
+	public static void setCompanyName(String companyName) {
+		EmployeeInfo.companyName = companyName;
+	}
+
+	public static String getCompanyName() {
+		return companyName;
+	}
+	     public double calculateSalary(double salary){
+		double yearly = salary*12;
+		return yearly;
+		 }
+
+		 public void companyMission(String m){
+			 System.out.println(m);
+		 }
+		 public void companyVission(String m, String v) {
+			 System.out.println(m);
+			 System.out.println(v);
+		 }
+	//0000000000
+
 	/*
 	 * This methods should calculate Employee bonus based on salary and performance.
 	 * Then it will return the total yearly bonus. So you need to implement the logic.
-	 * Hints: 10% of the salary for best performance, 8% of the salary for average performance and so on. 
+	 * Hints: 10% of the salary for best performance, 8% of the salary for average performance and so on.
 	 * You can set arbitrary number for performance.
 	 * So you probably need to send 2 arguments.
-	 * 
+	 *
+	 *
 	 */
-	public static int calculateEmployeeBonus(int numberOfYearsWithCompany){
-		int total=0;
-		return total;
+
+
+	//employee benefit
+		public void benefitLayout() {
+			System.out.println("Health Insurance and One month vacation...");
+
+		}
+
+	public static double calculateEmployeeBonus(double salary, int years){
+		
+
+		double bonus = 0;
+				if (years == 5) {
+					bonus = salary * 0.1 * 12;
+				} else if (years == 4) {
+					bonus = salary * 0.08 * 12;
+				} else if (years == 3) {
+					bonus = salary * 0.06 * 12;
+				} else if (years== 2) {
+					bonus = 0;
+					System.out.println("Your performance is poor, try to improve.");
+				} else {
+					bonus = 0;
+					System.out.println("You are fired.");
+				}
+				return bonus;
 	}
-	
+
 	/*
 	 * This methods should calculate Employee Pension based on salary and numbers of years with the company.
 	 * Then it will return the total pension. So you need to implement the logic.
 	 * Hints: pension will be 5% of the salary for 1 year, 10% for 2 years with the company and so on.
-	 * 
+	 *
 	 */
-	public static int calculateEmployeePension(){
-		int total=0;
+	public static double calculateEmployeePension(double salary){
+		double total=0;
 		Scanner sc  = new Scanner(System.in);
 		System.out.println("Please enter start date in format (example: May,2015): ");
 		String joiningDate = sc.nextLine();
@@ -70,12 +167,44 @@ public class EmployeeInfo {
 
         //implement numbers of year from above two dates
 		//Calculate pension
+		//++++++++
+
+		String startYear = convertedJoiningDate.substring(convertedJoiningDate.length() - 4, convertedJoiningDate.length());
+		String currentYear = convertedTodaysDate.substring(convertedTodaysDate.length() - 4, convertedTodaysDate.length());
+
+		int start = Integer.parseInt(startYear);
+		int current = Integer.parseInt(currentYear);
+
+		//Calculate pension
+		int numberOfYears = current - start;
+
+		if (numberOfYears >= 5) {
+			total = salary * .25;
+		} else if (numberOfYears == 4) {
+			total = salary * .20;
+		} else if (numberOfYears == 3) {
+			total = salary * .15;
+		} else if (numberOfYears == 2) {
+			total = salary * .10;
+		} else if (numberOfYears == 1) {
+			total = salary * .05;
+		} else if (numberOfYears == 0) {
+			total = 0;
+		}
+		System.out.println("Total pension: $" + total);
+
+
+
+
+		//+++++
 
 		return total;
 	}
 	private static class DateConversion {
 
 		public DateConversion(Months months){}
+
+
 		public static String convertDate(String date) {
 			String [] extractMonth = date.split(",");
 			String givenMonth = extractMonth[0];
@@ -107,22 +236,22 @@ public class EmployeeInfo {
 					date = 6;
 					break;
 				case July:
-					date = 1;
+					date = 7;
 					break;
 				case August:
-					date = 1;
+					date = 8;
 					break;
 				case September:
-					date = 1;
+					date = 9;
 					break;
 				case October:
-					date = 1;
+					date = 10;
 					break;
 				case November:
-					date = 1;
+					date = 11;
 					break;
 				case December:
-					date = 1;
+					date = 12;
 					break;
 				default:
 					date = 0;

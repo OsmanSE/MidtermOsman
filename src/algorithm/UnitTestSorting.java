@@ -25,4 +25,18 @@ public class UnitTestSorting {
 
 
     }
+    public  int[] selectionSort(int[] a){
+        int i, j,key,temp;
+        for(i=1;i<a.length;i++){
+            key=a[i];
+            j=i-1;
+            while(j>=0 && key<a[j]){
+                temp=a[i];
+                a[i]=a[j];
+                a[j]=temp;
+                j--;
+            }
+        }
+        return a;
+    }
 }

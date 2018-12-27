@@ -30,6 +30,7 @@ class emp implements Employee{
 	              private String name;
 	              private int id;
 	               private int dno;
+	               private String dname;
 	                 private int rate;
 	                private int sal;
 
@@ -73,13 +74,13 @@ class emp implements Employee{
 		this.sal = sal;
 	}
 
-	public String employeeName() {return "";}
-	public int employeeId(){ return 0;}
-
+	public String employeeName() {return name;}
+	public int employeeId(){ return id;}
+	public void assignDepartment(){}
 	public int hours(int a){return a;}
-	public void assignDepartment()       {
-		System.out.println();
+	public void assignDepartment(String dname) {
+		this.dname= dname;
 	}
-	public int calculateSalary(){return 0;}
+	public int calculateSalary(){return (this.rate*this.hours(5));}
 	public void benefitLayout() {}
 }

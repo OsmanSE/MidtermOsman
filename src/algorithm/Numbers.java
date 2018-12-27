@@ -26,6 +26,7 @@ public class Numbers {
 		storeRandomNumbers(num);
 		ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
 		//Selection Sort
+
 		Sort algo = new Sort();
 		algo.selectionSort(num);
 		long selectionSortExecutionTime = algo.executionTime;
@@ -35,6 +36,7 @@ public class Numbers {
         printValue(numbers);
 		int n = num.length;
 		randomize (num, n);
+
 		//Insertion Sort
 		algo.insertionSort(num);
 		long insertionSortExecutionTime = algo.executionTime;
@@ -46,7 +48,7 @@ public class Numbers {
 
 
 		//Come to conclusion about which Sorting Algorithm is better in given data set.
-
+		System.out.println("Quick Sort and Merge sort are better sorting options for this particular data");
 	}
 
 	public static void storeRandomNumbers(int [] num){
