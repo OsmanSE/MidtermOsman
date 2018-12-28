@@ -14,11 +14,11 @@ public class Anagram {
         Anagram an = new Anagram();
         String s1 = "ARMY";
         String s2 = "Mary";
-        System.out.println("Is " + s1 + " and " + s2 + " are anagram :" + an.anagram(s1, s2));
+        System.out.println("Is " + s1 + " and " + s2 + " are anagram :" + an.isAnagram(s1, s2));
 
     }
 
-    public boolean anagram(String s1, String s2) {
+    public static boolean isAnagram(String s1, String s2) {
 
         if (s1.length() != s2.length()) {
             return false;
